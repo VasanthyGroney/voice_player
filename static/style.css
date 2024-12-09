@@ -1,0 +1,28 @@
+button:hover {
+        width: 60px;
+        height: 60px;
+    }
+}
+}
+#listeningMessage {
+    position: fixed;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+    background-size: 400% 400%;
+    animation: rainbowAnimation 3s ease infinite, fadeIn 1s forwards;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    z-index: 1000;
+}
+@keyframes rainbowAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
